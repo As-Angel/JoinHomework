@@ -1,54 +1,39 @@
-
-// Router.js定义router，就是定义路径到组件的映射
-
+import VueRouter from 'vue-router'
 import Vue from 'vue'
-import Router from 'vue-router'
+
+import Personal from '../components/personal'
+import Class from '../components/class'
+import Grade from '../components/grade'
+import Paper from '../components/paper'
 // import HelloWorld from '@/components/HelloWorld'
-// import Film from '@/views/Film.vue'
-// import Cinema from '@/views/Cinema.vue'
+// import Login from '@/ components/login/Login'
 
-// 引入组件
-import home from "./home.vue";
-import about from "./about.vue"
-import VueRouter from 'vue-router';
+Vue.use(VueRouter)
 
-// 告诉vue使用vueRouter
-Vue.use(VueRouter);
-
-// Vue.use(Router) //注册路由模板
-
+// 配置映射关系
 const routes = [
+  // 一个url对应一个组件
   {
-    path:"/home",
-    component:home
+    path:'/personal',
+    component:Personal
   },
   {
-    path:"/about",
-    component:about
+    path:'/class',
+    component:Class
+  },
+  {
+    path:'/paper',
+    component:Paper
+  },
+  {
+    path:'/grade',
+    component:Grade
   }
 ]
 
-var router = new VueRouter({
+const router=  new VueRouter({
   routes
 })
-export default router;
 
-//导出
-// export default new Router({
-//   routes: [
-//     {
-//       path: '/film',
-//       // name: 'HelloWorld',
-//       // component: HelloWorld
-//       component:Film
-//     },
-//     {
-//       path:'/cinema',
-//       component:Cinema
-//     },
-//     {
-//       path:'/',
-//       redirect:'/film'
-//     }
-//   ]
-// })
+// 将router对象传入到vue实例
+export default router

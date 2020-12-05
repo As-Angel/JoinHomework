@@ -1,32 +1,27 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <tabbar></tabbar>
-    <router-view/>
+    <div>
+      <ul>
+        <li>
+          <router-link to="/personal">个人中心</router-link>
+        </li>
+        <li>
+          <router-link to="/class">班级管理</router-link>
+        </li>
+        <li>
+          <router-link to="/paper">试卷管理</router-link>
+        </li>
+        <li>
+          <router-link to="/grade">成绩管理</router-link>
+        </li>
+      </ul>
+    </div>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import tabbar from '@components/Tabbar'
-//注册组件
-import Tabbar from './components/Tabbar.vue'
-export default {
-  name: 'App',
-  components:{
-    tabbar,
-    Tabbar
+  export default {
+    name: 'App'
   }
-}
-
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
