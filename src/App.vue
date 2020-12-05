@@ -1,20 +1,9 @@
 <template>
   <div id="app">
     <div>
-      <ul>
-        <li>
-          <router-link to="/personal">个人中心</router-link>
-        </li>
-        <li>
-          <router-link to="/class">班级管理</router-link>
-        </li>
-        <li>
-          <router-link to="/paper">试卷管理</router-link>
-        </li>
-        <li>
-          <router-link to="/grade">成绩管理</router-link>
-        </li>
-      </ul>
+        <router-link to="/login">立即登录</router-link>
+        <!-- <router-link to="/layout">布局</router-link> -->
+        <router-link to="/list">管理</router-link>
     </div>
     <router-view></router-view>
   </div>
@@ -25,3 +14,8 @@
     name: 'App'
   }
 </script>
+
+<style>
+  @import 'style/manage.css'; /*引入公共样式*/
+
+</style>

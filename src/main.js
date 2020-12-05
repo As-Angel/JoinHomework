@@ -1,7 +1,11 @@
-import Vue from 'vue'
-import App from './App'
+import Vue from 'vue';
+import Element from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+import App from './App';
 // 导入Router
-import router from './router/index'
+import router from './router/index';
+
+Vue.use(Element);
 
 // import ElementUI from 'element-ui'
 // import 'element-ui/lib/theme-c halk/index.css'
@@ -12,6 +16,7 @@ import router from './router/index'
 
 // 注册element-ui
 // Vue.use(ElementUI)
+// Vue.use(Element)
 
 Vue.config.productionTip = false
 

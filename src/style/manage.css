@@ -1,0 +1,40 @@
+.right {
+  float:right;
+}
+.left {
+  float:left;
+}
+.box {
+  background:rgb(145, 196, 226);
+  width: 30%;
+  height: 580px;
+
+}
+.view{
+  width: 30%;
+  height: 580px;
+  background-color: rgb(143, 204, 233);
+  /* margin-left: 100px; */
+}
+.data {
+  width: 40%;
+  height: 580px;
+  background-color: rgb(159, 215, 241);
+}
+ul {
+  list-style-type:none;
+}
+li {
+  line-height: 50px;
+}
+input{
+  border: 1px solid #ccc;
+  height: 20px;
+    padding: 2px;
+    color: #444;
+    width: 200px;
+    margin: 10px;
+}
+td {
+  margin-left:10px;
+}
